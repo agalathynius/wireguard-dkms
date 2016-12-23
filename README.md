@@ -1,2 +1,1 @@
-# wireguard-dkms
-WireGuard DKMS RPM
+# WireGuard DKMS RPM
