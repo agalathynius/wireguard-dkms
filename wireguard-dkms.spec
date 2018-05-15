@@ -4,19 +4,17 @@
 Name:           %{dkms_name}-dkms
 Version:        0.0.20180513
 Release:        1%{?dist}
-Epoch:          1
 URL:            https://www.wireguard.com/
 Summary:        Fast, modern, secure VPN tunnel
 License:        GPLv2
 Group:          System Environment/Kernel
-BuildArch:      noarch
 
 Source0:        https://git.zx2c4.com/WireGuard/snapshot/WireGuard-%{version}.tar.xz
 
 BuildRequires:  kernel-devel
 BuildRequires:  sed
 
-Provides:       %{dkms_name}-kmod = %{epoch}:%{version}-%{release}
+Provides:       %{dkms_name}-kmod = 1:%{version}-%{release}
 Requires:       dkms
 Requires:       kernel-devel
 
