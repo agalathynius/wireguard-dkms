@@ -9,7 +9,6 @@ URL:            https://www.wireguard.com/
 Summary:        Fast, modern, secure VPN tunnel
 License:        GPLv2
 Group:          System Environment/Kernel
-BuildArch:      noarch
 
 Source0:        https://git.zx2c4.com/WireGuard/snapshot/WireGuard-%{version}.tar.xz
 
