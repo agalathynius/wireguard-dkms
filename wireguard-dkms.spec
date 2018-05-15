@@ -4,7 +4,6 @@
 Name:           %{dkms_name}-dkms
 Version:        0.0.20180514
 Release:        1%{?dist}
-Epoch:          1
 URL:            https://www.wireguard.com/
 Summary:        Fast, modern, secure VPN tunnel
 License:        GPLv2
