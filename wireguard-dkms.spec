@@ -14,7 +14,7 @@ Source0:        https://git.zx2c4.com/WireGuard/snapshot/WireGuard-%{version}.ta
 BuildRequires:  kernel-devel
 BuildRequires:  sed
 
-Provides:       %{dkms_name}-kmod = %{epoch}:%{version}-%{release}
+Provides:       %{dkms_name}-kmod = 1:%{version}-%{release}
 Requires:       dkms
 Requires:       kernel-devel
 
