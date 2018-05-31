@@ -2,7 +2,7 @@
 %global dkms_name wireguard
 
 Name:           %{dkms_name}-dkms
-Version:        0.0.20180524
+Version:        0.0.20180531
 Release:        1%{?dist}
 Epoch:          1
 URL:            https://www.wireguard.com/
