@@ -32,8 +32,8 @@ many different circumstances. It runs over UDP.
 %prep
 %setup -q -n WireGuard-%{version}
 
-# Fix the Makefile for CentOS7 since it ships coreutils from 2013.==> [this: fedora only]
-# sed -i 's/install .* -D -t\(.\+\) /mkdir -p \1 \&\& \0/' %{_builddir}/WireGuard-%{version}/src/Makefile
+# Fix the Makefile for CentOS7 since it ships coreutils from 2013.
+sed -i 's/install .* -D -t\(.\+\) /mkdir -p \1 \&\& \0/' %{_builddir}/WireGuard-%{version}/src/Makefile
 
 %build
 
@@ -51,5 +51,3 @@ dkms remove -m %{dkms_name} -v %{version} --all -q --rpm_safe_upgrade || :
 
 %files
 %{_usrsrc}/%{dkms_name}-%{version}
-
-%changelog
