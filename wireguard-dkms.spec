@@ -52,5 +52,4 @@ dkms remove -m %{dkms_name} -v %{version} --all -q --rpm_safe_upgrade || :
 %files
 %{_usrsrc}/%{dkms_name}-%{version}
 
-
 %changelog
