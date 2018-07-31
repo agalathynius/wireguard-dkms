@@ -2,7 +2,11 @@
 %global dkms_name wireguard
 
 Name:           %{dkms_name}-dkms
+<<<<<<< HEAD
 Version:        0.0.20180731
+=======
+Version:        0.0.20180708
+>>>>>>> b48b8708d1c8dcb6e5c54c22a4c115c263f4b442
 Release:        1%{?dist}
 Epoch:          1
 URL:            https://www.wireguard.com/
@@ -32,8 +36,8 @@ many different circumstances. It runs over UDP.
 %prep
 %setup -q -n WireGuard-%{version}
 
-# Fix the Makefile for CentOS7 since it ships coreutils from 2013.==> [this: fedora only]
-# sed -i 's/install .* -D -t\(.\+\) /mkdir -p \1 \&\& \0/' %{_builddir}/WireGuard-%{version}/src/Makefile
+# Fix the Makefile for CentOS7 since it ships coreutils from 2013.
+sed -i 's/install .* -D -t\(.\+\) /mkdir -p \1 \&\& \0/' %{_builddir}/WireGuard-%{version}/src/Makefile
 
 %build
 
